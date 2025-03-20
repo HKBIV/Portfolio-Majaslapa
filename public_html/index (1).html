@@ -21,6 +21,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 
 .Bilde {
   bottom: 0;
+  top: 1;
 }
 
 </style>
@@ -36,6 +37,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
     <a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>PORTFOLIO</a> 
     <a href="#Gro" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>PAR HKBIV</a> 
     <a href="#Nog" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>Nolīgšana</a>
+    <a href="#Ped" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-info-circle fa-fw w3-margin-right"></i>Informācija</a>
   </div>
   <div class="w3-panel w3-large">
     <i class="fa fa-facebook-official w3-hover-opacity"></i>
@@ -69,7 +71,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
   
   <!-- First Photo Grid-->
   <div class="w3-row-padding w3-topbar">
-    <div class="w3-container w3-margin-bottom w3-third w3-margin-top">
+    <div class="w3-container w3-margin-bottom w3-third w3-margin-top Bilde">
         <video src="Bildes/Slep" controls="controls" style="width:100%" class="w3-hover-opacity"></video>
       <div class="w3-container w3-white Bilde">
         <p><b>Viedo Apstrāde</b></p>
@@ -192,11 +194,21 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 
   <!-- Footer -->
   <footer class="w3-container w3-padding-32 w3-dark-grey" style="padding-left: 21%;">
-  <div class="w3-row-padding">
+  <div class="w3-row-padding" id="Ped">
     <div>
-      <h3>FOOTER</h3>
+      <h3>Papildus Info</h3>
+      <div class="w3-container w3-card-2 w3-half">
+        <h4>Adrese</h4>
+        <p>Latvija, Rīga, Brīvības iela 123</p>
+        <h4>E-pasts</h4>
+        <p>Hugo@HKBIV.lv</p>
+        </div>
+        <div class="w3-half w3-container w3-card-2">
+      <h4>Kaut Kas Papildus, lai Skaistāk Izskatītos</h4>
       <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
       <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+      </div>
+    </div>
     </div>
   
     <div class=" ">
