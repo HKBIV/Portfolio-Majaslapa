@@ -19,6 +19,10 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
   width: 90%;
 }
 
+.Bilde {
+  bottom: 0;
+}
+
 </style>
 </head>
 <body class="w3-light-grey w3-content" style="max-width:2000px">
@@ -64,22 +68,22 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
   <h1>Mani Iepriekšējie Projekti</h1>
   
   <!-- First Photo Grid-->
-  <div class="w3-row-padding">
-    <div class="w3-container w3-margin-bottom w3-third">
+  <div class="w3-row-padding w3-topbar">
+    <div class="w3-container w3-margin-bottom w3-third w3-margin-top">
         <video src="Bildes/Slep" controls="controls" style="width:100%" class="w3-hover-opacity"></video>
-      <div class="w3-container w3-white">
+      <div class="w3-container w3-white Bilde">
         <p><b>Viedo Apstrāde</b></p>
         <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
       </div>
     </div>
-    <div class="  w3-container w3-margin-bottom w3-third">
+    <div class="  w3-container w3-margin-bottom w3-third w3-margin-top">
       <img src="Bildes/Picture1.png" alt="Vaktorgrafika" style="width:100%" class="w3-hover-opacity">
       <div class="w3-container w3-white">
         <p><b>Vektorgrafika</b></p>
         <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
       </div>
     </div>
-    <div class="w3-container w3-third">
+    <div class="w3-container w3-third w3-margin-top">
       <img src="Bildes/excely.PNG" alt="Excel" style="width:100%" class="w3-hover-opacity">
       <div class="w3-container w3-white">
         <p><b>Izklājlapas</b></p>
@@ -108,7 +112,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 
   
   <!-- Images of Me -->
-  <div>
+  <div class="w3-border-top">
     <h1 id="Gro">Ko nozīmē HKBIV?</h1>
     <span id="dots">
       HKBIV ir ģeniāls cilvēks. Pirmģimnāzists. 
@@ -139,44 +143,25 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
   <button onclick="myFunction()" id="pog">Vairāk Par Ģeniālo Hugo Kristo Brāli IV</button>
   
 
-    <h4>Technical Skills</h4>
-    <!-- Progress bars / Skills -->
-    <p>Photography</p>
-    <div class="w3-grey">
-      <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:95%">95%</div>
-    </div>
-    <p>Web Design</p>
-    <div class="w3-grey">
-      <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:85%">85%</div>
-    </div>
-    <p>Photoshop</p>
-    <div class="w3-grey">
-      <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:80%">80%</div>
-    </div>
-    <p>
-      <button class="w3-button w3-dark-grey w3-padding-large w3-margin-top w3-margin-bottom">
-        <i class="fa fa-download w3-margin-right"></i>Download Resume
-      </button>
-    </p>
     <hr>
-<div>
+<div class="w3-border-top">
   <h1 id="Nog">Nolīgšana</h1>
   <form class="w3-container w3-card-4">
   <p>
     <label>Kompānija/Vārds</label>
-    <input class="w3-round w3-input w3-border" type="text">
+    <input class="w3-round w3-input w3-border" type="text" placeholder="Google/Jānis Bērziņš">
     </p>
     <div class="w3-row-padding">
     <div class="w3-half w3-section">
       <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-envelope-o"></i></div>
         <div class="w3-rest">
-          <input class="w3-input w3-border" name="email" type="text">
+          <input class="w3-input w3-border" name="email" type="text" placeholder="Jberzins@tvnet.lv">
         </div>
     </div>
     <div class="w3-half w3-section">
       <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-phone"></i></div>
         <div class="w3-rest">
-          <input class="w3-input w3-border" name="phone" type="text">
+          <input class="w3-input w3-border" name="phone" type="text" placeholder="+371 XX XXX XXX">
         </div>
     </div>
     </div>
@@ -265,7 +250,7 @@ function myFunction() {
 
   if (dots.style.display === "none") {
 dots.style.display = "inline";
-btnText.innerHTML = "Read more";
+btnText.innerHTML = "Vairāk par HKBIV";
 moreText.style.display = "none";
 
 } else {
