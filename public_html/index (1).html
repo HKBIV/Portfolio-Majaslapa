@@ -11,6 +11,19 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 
 #Hug {display:none;}
 
+.Tor {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  width: 90%;
+}
+
+.Bilde {
+  bottom: 0;
+  top: 1;
+}
+
 </style>
 </head>
 <body class="w3-light-grey w3-content" style="max-width:2000px">
@@ -18,15 +31,13 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 <!-- Sidebar/menu -->
 <nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:20%;" id="mySidebar"><br>
   <div class="w3-container">
-    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
-      <i class="fa fa-remove"></i>
-    </a>
     <h4><b>HKBIVPortfolio</b></h4>
   </div>
   <div class="w3-bar-block">
     <a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>PORTFOLIO</a> 
-    <a href="#pog" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>PAR HKBIV</a> 
-    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>WIP</a>
+    <a href="#Gro" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>PAR HKBIV</a> 
+    <a href="#Nog" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>Nolīgšana</a>
+    <a href="#Ped" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-info-circle fa-fw w3-margin-right"></i>Informācija</a>
   </div>
   <div class="w3-panel w3-large">
     <i class="fa fa-facebook-official w3-hover-opacity"></i>
@@ -35,6 +46,9 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
     <i class="fa fa-pinterest-p w3-hover-opacity"></i>
     <i class="fa fa-twitter w3-hover-opacity"></i>
     <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <div class="Tor w3-bottombar w3-margin w3-center">
+    <a class="w3-margin w3-round w3-bar-item w3-button w3-center" href="index.html">Sliktāka versija</a>
   </div>
 </nav>
 
@@ -50,33 +64,28 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
     <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
     <div class="w3-container">
     <h1><b>My Portfolio</b></h1>
-    <div class="w3-section w3-bottombar w3-padding-16">
-      <span class="w3-margin-right">Filter:</span> 
-      <button class="w3-button w3-black">ALL</button>
-      <button class="w3-button w3-white"><i class="fa fa-diamond w3-margin-right"></i>Design</button>
-      <button class="w3-button w3-white w3-hide-small"><i class="fa fa-photo w3-margin-right"></i>Photos</button>
-      <button class="w3-button w3-white w3-hide-small"><i class="fa fa-map-pin w3-margin-right"></i>Art</button>
-    </div>
     </div>
   </header>
+
+  <h1>Mani Iepriekšējie Projekti</h1>
   
   <!-- First Photo Grid-->
-  <div class="w3-row-padding">
-    <div class="w3-container w3-margin-bottom">
+  <div class="w3-row-padding w3-topbar">
+    <div class="w3-container w3-margin-bottom w3-third w3-margin-top Bilde">
         <video src="Bildes/Slep" controls="controls" style="width:100%" class="w3-hover-opacity"></video>
-      <div class="w3-container w3-white">
-        <p><b>Viedo Apstrāda</b></p>
+      <div class="w3-container w3-white Bilde">
+        <p><b>Viedo Apstrāde</b></p>
         <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
       </div>
     </div>
-    <div class="  w3-container w3-margin-bottom">
+    <div class="  w3-container w3-margin-bottom w3-third w3-margin-top">
       <img src="Bildes/Picture1.png" alt="Vaktorgrafika" style="width:100%" class="w3-hover-opacity">
       <div class="w3-container w3-white">
         <p><b>Vektorgrafika</b></p>
         <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
       </div>
     </div>
-    <div class="w3-container">
+    <div class="w3-container w3-third w3-margin-top">
       <img src="Bildes/excely.PNG" alt="Excel" style="width:100%" class="w3-hover-opacity">
       <div class="w3-container w3-white">
         <p><b>Izklājlapas</b></p>
@@ -87,14 +96,14 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
   
   <!-- Second Photo Grid-->
   <div class="w3-row-padding">
-    <div class="  w3-container w3-margin-bottom">
+    <div class="  w3-container w3-margin-bottom w3-half">
       <img src="Bildes/DatuDrošība.gif" alt="Rakstgrafika" style="width:100%" class="w3-hover-opacity">
       <div class="w3-container w3-white">
         <p><b>Rakstgrafika</b></p>
         <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
       </div>
     </div>
-    <div class="w3-container w3-margin-bottom">
+    <div class="w3-container w3-margin-bottom w3-half">
       <img src="Bildes/3dsud.png" alt="3D Modeļi" style="width:100%" class="w3-hover-opacity">
       <div class="w3-container w3-white">
         <p><b>Digitālā modelēšana</b></p>
@@ -105,7 +114,8 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 
   
   <!-- Images of Me -->
-  <div>
+  <div class="w3-border-top">
+    <h1 id="Gro">Ko nozīmē HKBIV?</h1>
     <span id="dots">
       HKBIV ir ģeniāls cilvēks. Pirmģimnāzists. 
     </span>
@@ -114,17 +124,20 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 
   <div class="w3-row-padding w3-padding-16" id="about">
     <div class="w3-col m6">
-      <img src="/w3images/avatar_g.jpg" alt="Me" style="width:100%">
+      <img src="Bildes/Es.jpeg" alt="Me" style="width:100%">
     </div>
     <div class="w3-col m6">
-      <img src="/w3images/me2.jpg" alt="Me" style="width:100%">
+      <img src="Bildes/Es2.jpeg" alt="Me" style="width:100%">
     </div>
   </div>
 
   <div class="w3-container w3-padding-large" style="margin-bottom:32px">
-    <h4><b>About Me</b></h4>
-    <p>Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest of lorem ipsum and mauris neque quam blog. I want to share my world with you. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla</p>
+    <h4><b>Par Mani</b></h4>
+    <p>Ilgi ir spekulēts, ko varētu nozīmēt HKBIV? Daudzī domā, ka H nozīmē Hugo un B - Brālis. Bet ko nozīmē K un I un V? Šo laikam nekad neuzinās  
+    </p>
     <hr>
+    <p>Hugo Brālis (angļu: Hugo Bretheren, kristīts 1564. gada 26. aprīlī, miris 1616. gada 23. aprīlī pēc Jūlija kalendāra) bija latviešu fiziķis un programētājs, tradicionāli atzīts par visu laiku izcilāko latviešu valodā saprogramējušo autoru, kā arī par vienu no izcilākajiem autoriem pasaules programēšanā vispār.
+       Brālis uzrakstījis 38 programmas, 154 mājaslapas un vēl citus kodu darbus.</p>
     </div>
   
   
@@ -132,35 +145,70 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
   <button onclick="myFunction()" id="pog">Vairāk Par Ģeniālo Hugo Kristo Brāli IV</button>
   
 
-    <h4>Technical Skills</h4>
-    <!-- Progress bars / Skills -->
-    <p>Photography</p>
-    <div class="w3-grey">
-      <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:95%">95%</div>
-    </div>
-    <p>Web Design</p>
-    <div class="w3-grey">
-      <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:85%">85%</div>
-    </div>
-    <p>Photoshop</p>
-    <div class="w3-grey">
-      <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:80%">80%</div>
-    </div>
-    <p>
-      <button class="w3-button w3-dark-grey w3-padding-large w3-margin-top w3-margin-bottom">
-        <i class="fa fa-download w3-margin-right"></i>Download Resume
-      </button>
-    </p>
     <hr>
+<div class="w3-border-top">
+  <h1 id="Nog">Nolīgšana</h1>
+  <form class="w3-container w3-card-4" style="width: 99%;">
+  <p>
+    <label>Kompānija/Vārds</label>
+    <input class="w3-round w3-input w3-border" type="text" placeholder="Google/Jānis Bērziņš">
+    </p>
+    <div class="w3-row-padding">
+    <div class="w3-half w3-section">
+      <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-envelope-o"></i></div>
+        <div class="w3-rest">
+          <input class="w3-input w3-border" name="email" type="text" placeholder="Jberzins@tvnet.lv">
+        </div>
+    </div>
+    <div class="w3-half w3-section">
+      <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-phone"></i></div>
+        <div class="w3-rest">
+          <input class="w3-input w3-border" name="phone" type="text" placeholder="+371 XX XXX XXX">
+        </div>
+    </div>
+    </div>
+    <h3>Jēga</h3>
+    <p>
+    <input class="w3-radio" type="radio" name="Jega" value="Dizains">
+    <label>Dizains</label>
+    </p>
+    <p>
+    <input class="w3-radio" type="radio" name="Jega" value="Modelēšana">
+    <label>Modelēšana</label>
+    </p>
+    <p>
+    <input class="w3-radio" type="radio" name="Jega" value="Video apstrāde">
+    <label>Video apstrāde</label>
+    </p>
+  <p>
+    <label>Komentāri</label>
+    <input class="w3-input w3-border w3-animate-input" type="text" style="width:30%">
+  </p>
+  <p>
+    <input class="w3-button w3-border" type="submit" value="Iesniegt">
+  </p>
+  </form>
+ </div>
   </div>
+
 
   <!-- Footer -->
   <footer class="w3-container w3-padding-32 w3-dark-grey" style="padding-left: 21%;">
-  <div class="w3-row-padding">
+  <div class="w3-row-padding" id="Ped">
     <div>
-      <h3>FOOTER</h3>
+      <h3>Papildus Info</h3>
+      <div class="w3-container w3-card-2 w3-half">
+        <h4>Adrese</h4>
+        <p>Latvija, Rīga, Brīvības iela 123</p>
+        <h4>E-pasts</h4>
+        <p>Hugo@HKBIV.lv</p>
+        </div>
+        <div class="w3-half w3-container w3-card-2">
+      <h4>Kaut Kas Papildus, lai Skaistāk Izskatītos</h4>
       <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
       <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+      </div>
+    </div>
     </div>
   
     <div class=" ">
@@ -189,6 +237,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
         <span class="w3-tag w3-grey w3-small w3-margin-bottom">Sports</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Games</span>
       </p>
     </div>
+    <a href="index.html">Spiedšiet</a>
 
   </div>
   </footer>
@@ -213,12 +262,12 @@ function myFunction() {
 
   if (dots.style.display === "none") {
 dots.style.display = "inline";
-btnText.innerHTML = "Read more";
+btnText.innerHTML = "Vairāk par HKBIV";
 moreText.style.display = "none";
 
 } else {
 dots.style.display = "none";
-btnText.innerHTML = "Read less";
+btnText.innerHTML = "Mazāk";
 moreText.style.display = "inline";
 }
 }
