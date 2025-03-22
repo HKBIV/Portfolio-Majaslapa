@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link href="css/mansStils.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
@@ -34,7 +35,14 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
     <h4><b>HKBIVPortfolio</b></h4>
   </div>
   <div class="w3-bar-block">
-    <a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>PORTFOLIO</a> 
+    <div class="dropdown">
+    <a href="#portfolio" onclick="w3_close()" class="dropbtn w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>PORTFOLIO</a>
+    <div class="dropdown-containera">
+      <a class="w3-bar-item w3-button w3-padding" href="#Gro">Par HKBIV</a>
+      <a class="w3-bar-item w3-button w3-padding" href="#Nog">Nolīgšana</a>
+      <a class="w3-bar-item w3-button w3-padding" href="#Ped">Informācija</a>
+    </div>
+    </div>
     <a href="#Gro" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>PAR HKBIV</a> 
     <a href="#Nog" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>Nolīgšana</a>
     <a href="#Ped" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-info-circle fa-fw w3-margin-right"></i>Informācija</a>
@@ -49,8 +57,9 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
     <i class="fa fa-linkedin w3-hover-opacity"></i>
   </div>
     <div class="w3-border-top w3-bar-block">
-      <a href="forma.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-calculator fa-fw w3-margin-right"></i>Kalkulators</a>
-      <a href="dzer.html" class="w3-bar-item w3-button w3-padding"><i class="fa fa-coffee fa-fw w3-margin-right"></i>Dzeršana</a>
+      <a href="forma.html" onclick="w3_close()" class="w3-button w3-padding w3-third"><i class="fa fa-calculator fa-fw w3-center"></i></a>
+      <a href="dzer.html" class="w3-button w3-padding w3-third"><i class="fa fa-coffee fa-fw w3-center"></i></a>
+      <a href="dzerdaudz.html" class="w3-button w3-padding w3-third"><i class="fa fa-beer fa-fw w3-center"></i></a>
     </div>
   <div class="Tor w3-bottombar w3-margin w3-center">
     <a class="w3-margin w3-round w3-bar-item w3-button w3-center" href="index.html">Sliktāka versija</a>
@@ -83,7 +92,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
         <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
       </div>
     </div>
-    <div class="  w3-container w3-margin-bottom w3-third w3-margin-top">
+    <div class="w3-container w3-margin-bottom w3-third w3-margin-top">
       <img src="Bildes/Picture1.png" alt="Vaktorgrafika" style="width:100%" class="w3-hover-opacity">
       <div class="w3-container w3-white">
         <p><b>Vektorgrafika</b></p>
@@ -275,6 +284,21 @@ dots.style.display = "none";
 btnText.innerHTML = "Mazāk";
 moreText.style.display = "inline";
 }
+}
+
+var dropdown = document.getElementsByClassName("dropbtn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
 }
 </script>
 
