@@ -14,3 +14,23 @@
   }
 
 
+  body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+  #Hug {display:none;}
+  
+  .Tor {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    width: 90%;
+  }
+  
+  .Bilde {
+    bottom: 0;
+    top: 1;
+  }
+
+  #bod {
+    background-color: rgb(247, 245, 245);
+  }
