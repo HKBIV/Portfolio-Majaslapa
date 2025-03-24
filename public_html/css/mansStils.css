@@ -34,3 +34,12 @@
   #bod {
     background-color: rgb(247, 245, 245);
   }
+
+  .Māksla {
+    background-image: url(../Images/Back.png);
+    background-position: center;
+    background-size: 100%;
+    color: white;
+    text-align: center;
+    text-emphasis: bold;
+  }
