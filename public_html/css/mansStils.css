@@ -1,0 +1,47 @@
+.dropdown .dropbtn {
+    margin: 0;
+  }
+
+  
+  .dropdown-containera {
+    display: none;
+   
+  }
+  
+ 
+  .dropdown:hover .dropdown-container {
+    display: block;
+  }
+
+
+  body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+  #Hug {display:none;}
+  
+  .Tor {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    width: 90%;
+  }
+  
+  .Bilde {
+    bottom: 0;
+    top: 1;
+  }
+
+  #bod {
+    background-color: rgb(247, 245, 245);
+  }
+
+  .Māksla {
+    background-image: url(../Images/Back.png);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    text-emphasis: bold;
+    opacity: 0.9;
+  }
