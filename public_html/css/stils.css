@@ -36,20 +36,3 @@ input[type="button"]{
     margin-bottom: 20px;
 }
 
-
-  .dropdown .dropbtn {
-    margin: 0;
-  }
-
-  
-  .dropdown-containera {
-    display: none;
-   
-  }
-  
- 
-  .dropdown:hover .dropdown-container {
-    display: block;
-  }
-
-
