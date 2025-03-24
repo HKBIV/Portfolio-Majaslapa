@@ -1,0 +1,38 @@
+h1, h2, h3, h4, h5, h6, p {
+    font-family: Raleway;
+    text-align: center;
+    padding: 10px;
+}
+
+input[type="button"]{
+  background-color: #4CAF50;
+  color: white;
+  border: 1px solid #ffffff;
+}
+
+.for {
+    text-align: center;
+    padding: 10px;
+    border-bottom: 2px solid #d8d6d6;
+    border-top: 2px solid #d8d6d6;
+    margin: auto;
+}
+
+.sk {
+    padding: 10px;
+    text-align: center;
+    margin: auto;
+    border-radius: 3px;
+    border: 1px solid #d8d6d6;
+    width: 60%;
+}
+
+.for {
+    padding: 10px;
+    text-align: center;
+    margin: auto;
+    border: 1px solid #d8d6d6;
+    width: 60%;
+    margin-bottom: 20px;
+}
+

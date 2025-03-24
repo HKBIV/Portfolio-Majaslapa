@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link href="css/stils.css" rel="stylesheet" type="text/css">
+        <link href="css/mansStils" rel="stylesheet" type="text/css">
         <meta charset="UTF-8">
     </head>
 <body>
@@ -14,13 +16,13 @@ function maksa(){
  }   
 </script>
 <p>Izvēlies dzērienu:</p>
-<form>
-  <input type="radio" id="kafija" name="drink" value="3.60">
-  <label for="kafija">kafija</label><br>
-  <input type="radio" id="sula" name="drink" value="2.50">
-  <label for="sula">sula</label><br>
-  <input type="radio" id="kakao" name="drink" value="3.20">
-  <label for="kakao">kakao</label><br><br>
+<form class="for">
+ <input type="radio" id="kafija" name="drink" value="3.60">
+ <label for="kafija">kafija</label><br>
+ <input type="radio" id="sula" name="drink" value="2.50">
+ <label for="sula">sula</label><br>
+ <input type="radio" id="kakao" name="drink" value="3.20">
+ <label for="kakao">kakao</label><br><br>
   <input type="button" id="poga" value="jāmaksā" onclick="maksa()">
   <input id="pog">
 </form>
